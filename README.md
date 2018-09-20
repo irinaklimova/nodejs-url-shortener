@@ -1,6 +1,6 @@
 Install MongoDB:
 ```
-Folow instractions from here https://docs.mongodb.com/manual/installation/
+Folow instractions from https://docs.mongodb.com/manual/installation/
 ```
 Install:
 ```
@@ -11,3 +11,4 @@ Start server:
 npm run start
 ```
 
+Go to http://localhost:8086/
