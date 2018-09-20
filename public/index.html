@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700" media="all">
+    <title>XIAG test task</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0" />
+</head>
+<body>
+<div class="page">
+    <div class="page__header">
+        <div class="page__logo">
+            <a href="https://www.xiag.ch" target="_blank">
+                <img src="/images/page-logo.png" alt="XIAG AG">
+            </a>
+        </div>
+        <div class="page__task-name">
+            URL shortener
+        </div>
+    </div>
+    <div class="page__image">
+        <div class="page__task-title">
+            URL shortener
+        </div>
+    </div>
+    <div class="page__form">
+        <form onsubmit="getUrl(name.value)">
+            <div class="form">
+                <div class="form__long-url">
+                    <label for="name">
+                        Long URL
+                    </label>
+                    <input type="url" class="input-text" id="name" name="url">
+                    <input type="submit" class="btn" value="Do!">
+                </div>
+                <div class="form__short-url">
+                    <label>
+                        Short URL
+                    </label>
+                </div>
+                <div class="form__result">
+                    <div id="result"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="page__content">
+        <pre>
+            Using this HTML please implement the following:
+
+            1. Site-visitor (V) enters any original URL to the Input field, like
+            http://anydomain/any/path/etc;
+            2. V clicks submit button;
+            3. Page makes AJAX-request;
+            4. Short URL appears in Span element, like http://yourdomain/abCdE (don't use any
+               external APIs as goo.gl etc.);
+            5. V can copy short URL and repeat process with another link
+
+            Short URL should redirect to the original link in any browser from any place and keep
+            actuality forever, doesn't matter how many times application has been used after that.
+
+
+            Requirements:
+
+            1. Use PHP or Node.js;
+            2. Don't use any frameworks.
+
+            Expected result:
+
+            1. Source code;
+            2. System requirements and installation instructions on our platform, in English.
+        </pre>
+
+    </div>
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>
